@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-image: url("https://ca-times.brightspotcdn.com/dims4/default/b62e116/2147483647/strip/true/crop/1515x1000+0+0/resize/1200x792!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fec%2F48%2F75fb9d684e1b9673520e911a8a3c%2Fun-destino-para-gozar-958578.JPG");
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+}
+
+.navbar {
+    background-color: #0065b3;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    width: 68%;
+}
+
+.content {
+    margin-bottom: 2rem;
+}
+
+.content h2 {
+    font-size: 2rem;
+    color: #004a89;
+    margin-bottom: 1rem;
+}
+
+article {
+    margin-bottom: 1.5rem;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery img {
+    width: 30%;
+    height: auto;
+    border: 5px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial{
+    background-color: #e0f7fa;
+    padding: 1rem;
+    border-left: 10px;
+}
+
+.sidebar {
+    padding: 2rem;
+    background-color: #f8f8f8;
+    width: 30%;
+    float: right;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 1.8rem;
+    color: #004a89;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.news-list {
+    list-style: none;
+    padding: 0;
+}
+
+.news-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.news-list li img.news-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.news-list li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.news-list li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: white; /* Un color azul oscuro que puede resaltar */
+    color: black;
+    padding: 10px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+
+.copy {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+    color: black; /* Un color gris claro */
+    border-top:1px solid #ccc;
+}
+
+.footer-boton {
+    width: 100%;
+    text-align: center;
+    background-color: white; /* Un tono más oscuro para crear contraste */
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-boton {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

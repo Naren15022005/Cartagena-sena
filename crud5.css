@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buscarr{
+    margin-bottom: 5px;
+}
+
+.search {
+    display: flex;
+    justify-items: center;
+    height: 35px;
+    background-color:  #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    width: 400px;
+    padding-bottom: 4px;
+    padding-right: 8px;
+}
+.search input[type="text"] {
+    border: none;
+    outline: none;
+    margin: 5px;
+}
+
+
+.search button {
+    padding: 6px;
+    text-align: center;
+    background: none;
+    cursor: pointer;
+}
+
+h2 {
+    margin: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 5px;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+   
+}
+
+.id{
+    text-align: center;
+}
+
+
+/* Estilo del checkbox */
+.selectRow{
+    margin: auto; /* Centrar el checkbox */
+    display: block; /* Asegurarte de que se muestre como un bloque */
+}
+
+/* Clase para resaltar la fila seleccionada */
+.selected-row {
+    background-color: rgba(211, 211, 211, 0.5); /* Gris transparente */
+}
+
+
+th {
+    border: 1px solid #aaa;
+}
+
+ .elimi{
+text-align: center;
+cursor: pointer;
+}
+
+
+
+.canecota{
+    transition: background-color 0.3s;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.canecota:hover{
+    background-color: #e94b4b;
+}
+
+
+
+.canequita{
+    transition: background-color 0.3s;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+}   
+
+
+.canequita:hover{
+    background-color: #e94b4b;
+    transform: scale(1.2);
+}
+
+table filas {
+    height: 10px;
+    background-color: #fff;
+    border: 1px solid transparent;
+}
+
+.filas:hover{
+    background-color: #fff;
+    border: 1px solid #bbb;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 1.0);
+}
+
+table th {
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    font-size: .85em;
+}
+
+.actions{
+    text-align: center;
+    cursor: pointer;
+}
+
+.edit-button{
+    background-color: #c9c9c9;
+    width: 90px;
+    height: 25px;
+}
+
+.edit-button:hover{
+    background-color: #67b0ff;
+}
+
+
+/* Estilo del Modal */
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+/* Contenido del Modal */
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+    position: absolute;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+/* Animación para una entrada suave del modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Botón de cierre (X) */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    color: black;
+    width: 41px;
+    cursor: pointer;
+    height: 35px;
+    border-radius: 5px; /* Hace que el fondo sea circular */
+}
+
+.close:hover{
+    background-color: #c2baba; /* Color de fondo suave al hacer hover */
+
+}
+
+/* Estilo del formulario dentro del modal */
+
+
+/* Estilos de los campos del formulario */
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Botones de acción */
+.modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Añadir un espacio entre los botones */
+    margin-top: 20px;
+}
+
+/* Estilo de los botones */
+button {
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Botón para guardar cambios */
+#saveChanges {
+    margin-top:10px ;
+    margin-bottom: 10px;
+    background-color: #17741a;
+    color: white;
+    width: 500px; /* Ajustar el ancho para centrar mejor */
+    height: 40px;
+}
+
+#saveChanges:hover {
+    background-color: #1b831e;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Botón para eliminar */
+#deleteUser {
+    background-color: #b10a0a;
+    color: white;
+    width: 500px; /* Ajustar el ancho para centrar mejor */
+    height: 40px;
+}
+
+#deleteUser:hover {
+    background-color: #c20a0a;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}

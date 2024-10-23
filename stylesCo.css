@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eaeaea;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #d1860e, #df6615);
+    color: rgb(255, 251, 251);
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 20px;
+    display: flex;
+    
+}
+
+.inicio{
+    display: flex;
+    justify-content: center;
+}
+
+ .abajo{
+    display: block;
+    flex-direction: column;
+}
+
+.escudo{
+    width: 60px;
+    height: auto;
+    content: none;
+    display: inline;
+   
+}
+
+.Menu {
+    list-style-type: none;
+    display: flex;
+    justify-items: center;
+}
+
+
+
+.Menu li {
+    padding: auto;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.5s ease; /* Efecto suave de transición */
+    margin: 5px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #c04e2b;
+    padding: 10px;
+    border-bottom: 1px solid #CCC;
+}
+
+p {
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+#gastronomia, #bebidas, #recetas, #mercados {
+    padding: 20px;
+    background-color: white;
+    margin: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.platos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.plato {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+
+}
+
+.plato:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.plato img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 15px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    background-color: white;
+    border-top: 1px solid #ccc;
+}
+
+

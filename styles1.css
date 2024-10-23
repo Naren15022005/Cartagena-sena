@@ -1,0 +1,320 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Fuente legible y moderna */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+   
+    background-color: #f0f0f0; /* Color de fondo de respaldo en caso de que la imagen no se cargue */
+    color: #333; /* Color del texto para un buen contraste con el fondo */
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+}
+/*body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+}*/
+
+header {
+    background-image: url("https://ca-times.brightspotcdn.com/dims4/default/b62e116/2147483647/strip/true/crop/1515x1000+0+0/resize/1200x792!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fec%2F48%2F75fb9d684e1b9673520e911a8a3c%2Fun-destino-para-gozar-958578.JPG");
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(252, 252, 252, 0); /* Color negro semi-transparente para mejorar la legibilidad */
+    color: #fff0f0;
+    padding: 2rem 2rem; /* Ajusta el padding según sea necesario */
+    text-align: center;
+    height: auto; /* Ajusta la altura según el contenido */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column; /* Cambia a columna para alinear el botón y el texto verticalmente */
+}
+
+.back-button {
+    position: absolute;
+    top: 1rem; /* Espacio desde el borde superior */
+    left: 1rem; /* Espacio desde el borde izquierdo */
+    background-color: #ffbb00; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 0.5rem 1rem; /* Espacio interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados para el botón */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-size: 1rem; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita para el texto */
+    cursor: pointer; /* Cursor de puntero para el botón */
+    z-index: 1; /* Asegura que el botón esté por encima del contenido del encabezado */
+}
+
+.back-button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el ratón sobre el botón */
+}
+
+.header-logo {
+    margin: 1rem 0; /* Espacio arriba y abajo del logo */
+}
+
+h1 {
+    font-family: 'Georgia', serif; /* Fuente con serifas para un toque clásico */
+    font-size: 1.75rem; /* Tamaño grande para los títulos */
+    color: #ffffff; /* Color del texto del título */
+    border-bottom: 2px solid #000000; /* Línea debajo del título para destacarlo */
+    padding-bottom: 0.5rem; /* Espacio debajo del título */
+    margin-bottom: 1rem; /* Espacio entre el título y el párrafo */
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem; /* Reducir el padding en pantallas más pequeñas */
+    }
+
+    .back-button {
+        font-size: 0.9rem; /* Reducir el tamaño del texto en pantallas más pequeñas */
+        padding: 0.5rem; /* Ajustar el padding en pantallas más pequeñas */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Reducir el tamaño del título en pantallas más pequeñas */
+    }
+}
+
+
+p{text-decoration:blink;}
+
+
+h1{
+    text-decoration:blink;
+}
+
+
+
+
+.attractions {
+    background-color: #f9f9f9; /* Color de fondo suave */
+    padding: 2rem; /* Espacio interno para evitar que el contenido esté pegado a los bordes */
+    border-radius: 8px; /* Bordes redondeados para un diseño más moderno */
+    max-width: 1200px; /* Ancho máximo para mantener el contenido compacto en pantallas grandes */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+}
+
+.attractions h2 {
+    font-family: 'Georgia', serif; /* Fuente con serifas para un toque clásico */
+    font-size: 1.75rem; /* Tamaño grande para los títulos */
+    color: #333; /* Color oscuro para buen contraste */
+    border-bottom: 2px solid #272727; /* Línea debajo del título para destacarlo */
+    padding-bottom: 0.5rem; /* Espacio debajo del título */
+    margin-bottom: 1rem; /* Espacio entre el título y el párrafo */
+}
+
+.attractions p {
+    font-family: 'Arial', sans-serif; /* Fuente sin serifas para el cuerpo del texto */
+    font-size: 1rem; /* Tamaño estándar para el texto */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+    color: #555; /* Color de texto más claro que el del título */
+    margin-bottom: 1.5rem; /* Espacio debajo de cada párrafo */
+}
+
+.history-image {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
+    max-width: 800px; /* Ancho máximo para evitar que las imágenes sean demasiado grandes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    display: block; /* Asegura que la imagen se muestre en su propia línea */
+    margin: 1rem 0; /* Espacio vertical alrededor de las imágenes */
+}
+
+@media (max-width: 768px) {
+    .attractions {
+        padding: 1rem; /* Reducir el padding en pantallas más pequeñas */
+    }
+
+    .attractions h2 {
+        font-size: 1.5rem; /* Reducir el tamaño del texto en pantallas más pequeñas */
+    }
+
+    .attractions p {
+        font-size: 0.9rem; /* Reducir el tamaño del texto en pantallas más pequeñas */
+    }
+
+    .history-image {
+        max-width: 100%; /* Asegura que las imágenes se ajusten al ancho del contenedor en pantallas pequeñas */
+    }
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff; /* Color de fondo cálido */
+    padding: 2rem; /* Espacio interno para evitar que el contenido esté pegado a los bordes */
+    border-radius: 20px; /* Bordes redondeados para un toque moderno */
+    max-width: 900px; /* Ancho máximo para no estirar demasiado el contenido en pantallas grandes */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para efectos */
+}
+
+div:hover {
+    transform: scale(1.03); /* Aumenta el tamaño ligeramente al pasar el ratón */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el ratón */
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    color: #000000; /* Color de texto más oscuro para un mejor contraste */
+}
+
+button {
+    background-color: #ffab00; /* Color del botón */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff8c00; /* Color del botón al pasar el ratón */
+}
+
+@media (max-width: 768px) {
+    div {
+        padding: 1rem; /* Reducir el padding en pantallas más pequeñas */
+        max-width: 100%; /* Ajustar el ancho máximo en pantallas más pequeñas */
+    }
+}
+
+
+.about {
+    background-color: #f9f9f9; /* Color de fondo suave */
+    padding: 2rem; /* Espacio interno para evitar que el contenido esté pegado a los bordes */
+    border-radius: 8px; /* Bordes redondeados para un diseño moderno */
+    max-width: 1200px; /* Ancho máximo para un diseño más ancho y mantener el contenido compacto en pantallas grandes */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar profundidad */
+}
+
+.about h2 {
+    font-family: 'Georgia', serif; /* Fuente con serifas para un estilo clásico y elegante */
+    font-size: 1.75rem; /* Tamaño grande para los títulos */
+    color: #333; /* Color oscuro para buen contraste */
+    border-bottom: 2px solid #272727; /* Línea debajo del título para destacarlo */
+    padding-bottom: 0.5rem; /* Espacio debajo del título */
+    margin-bottom: 1rem; /* Espacio entre el título y el párrafo */
+}
+
+.about p {
+    font-family: 'Arial', sans-serif; /* Fuente sin serifas para el cuerpo del texto, más legible */
+    font-size: 1rem; /* Tamaño estándar para el texto del párrafo */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+    color: #555; /* Color de texto más claro que el del título */
+    margin-bottom: 1.5rem; /* Espacio debajo de cada párrafo */
+}
+
+.about p:first-of-type {
+    margin-top: 0; /* Elimina el margen superior en el primer párrafo */
+}
+
+.about h2:first-of-type {
+    margin-top: 0; /* Elimina el margen superior en el primer título */
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 1rem; /* Reducir el padding en pantallas más pequeñas */
+    }
+
+    .about h2 {
+        font-size: 1.5rem; /* Reducir el tamaño del texto en pantallas más pequeñas */
+    }
+
+    .about p {
+        font-size: 0.9rem; /* Reducir el tamaño del texto en pantallas más pequeñas */
+    }
+}
+
+.contact {
+    background-image: url("https://ca-times.brightspotcdn.com/dims4/default/b62e116/2147483647/strip/true/crop/1515x1000+0+0/resize/1200x792!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fec%2F48%2F75fb9d684e1b9673520e911a8a3c%2Fun-destino-para-gozar-958578.JPG");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Mantiene la imagen en el fondo durante el desplazamiento */
+    background-color: rgba(0, 0, 0, 0.4); /* Color negro semi-transparente para mejorar la legibilidad */
+    
+    color: #fff;
+    padding: 2rem 1.5rem; /* Ajusta el padding para mayor espacio */
+    text-align: center;
+    border-radius: 8px; /* Bordes redondeados para un diseño más moderno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para un efecto de profundidad */
+    position: relative;
+    overflow: hidden; /* Asegura que cualquier contenido desbordante no sea visible */
+}
+.contact h2 {
+    font-family: 'Arial', sans-serif; /* O elige una fuente que se adapte a tu diseño */
+    font-size: 2.5rem; /* Tamaño de fuente grande para destacarse */
+    font-weight: bold; /* Negrita para mayor impacto */
+    color: #ffffff; /* Color blanco para contrastar con el fondo */
+    text-shadow: 1px 1px 3px rgba(7, 7, 7, 0.7); /* Sombra sutil para mejor legibilidad */
+    margin: 0 0 1rem; /* Margen inferior para separar del contenido adyacente */
+    line-height: 1.3; /* Espaciado entre líneas para mejorar la legibilidad */
+    letter-spacing: 0.5px; /* Espaciado entre letras para mejorar el estilo */
+    text-transform: uppercase; /* Opcional: transformar a mayúsculas para un estilo más fuerte */
+
+}
+.contact p {
+    font-family: 'Georgia', serif; /* Fuente serif para un toque elegante */
+    font-size: 1.2rem; /* Tamaño de fuente adecuado para párrafos */
+    color: #ffffff; /* Color blanco para contrastar con el fondo */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+    margin: 0 0 1.5rem; /* Margen inferior para separar del contenido adyacente */
+    padding: 0; /* Elimina el padding para mantener el diseño limpio */
+    text-align: center; /* Centra el texto para que coincida con el encabezado */
+    max-width: 800px; /* Opcional: Limita el ancho del párrafo para mejorar la legibilidad en pantallas grandes */
+    margin-left: auto; /* Centra el párrafo horizontalmente */
+    margin-right: auto; /* Centra el párrafo horizontalmente */
+}
+.contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Superposición oscura para mejorar la legibilidad del texto */
+    z-index: 1;
+}
+
+.contact-content {
+    position: relative;
+    z-index: 2; /* Asegura que el contenido esté por encima de la superposición */
+}
+
+footer {
+    background-color: #ffffff; /* Color de fondo oscuro para contraste */
+    color: #fff; /* Color de texto blanco para legibilidad */
+    text-align: center; /* Centra el texto en el footer */
+    padding: 1rem 1rem; /* Espacio interno alrededor del contenido */
+    font-size: 0.9rem; /* Tamaño de fuente adecuado para pie de página */
+    border-top: 1px solid #444; /* Línea superior sutil para separación */
+    position: relative; /* Asegura que el footer se posicione correctamente */
+    bottom: 0; /* Fija el footer al fondo de la página si se utiliza `position: fixed` */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho de la página */
+}
+
+footer p {
+    margin: 0; /* Elimina el margen alrededor del párrafo */
+    font-family: 'Arial', sans-serif; /* Fuente sans-serif para un diseño moderno */
+    line-height: 1.5; /* Espaciado entre líneas para mejorar la legibilidad */
+    color: #000000; /* Color blanco para contrastar con el fondo */
+}

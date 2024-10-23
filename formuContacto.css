@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(240, 235, 235);
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1{
+    color:#333333;
+    margin: 3px;
+    text-align: center;
+}
+
+
+p{
+    font-size: 13px;
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 15px;
+
+}
+
+.final{
+    display: flex;
+    margin-top: 10px;
+    color: black;
+}
+
+.contenedor_formulario{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 10px;
+    padding: 2%;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    
+}
+
+
+label{
+    color:#333333;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input{
+    left: 10%;
+    top: 10%;
+    width: 350px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #cccccc7c;
+    transition: background-color 0.3s, color 0.5s;
+}
+
+input:focus {
+    background-color: rgba(255, 255, 255, 0.137); /* Fondo semi-transparente */
+    color: black; /* Color del texto al enfocarse */
+    border-color: lightblue; /* Cambia el color del borde */
+    outline: none; /* Quitar el borde por defecto del navegador */
+    border-radius: 3px;
+}
+  
+  input::placeholder {
+    color: rgba(255, 255, 255, 0.5); /* Color del placeholder */
+  }
+  
+  input:focus::placeholder {
+    color: rgba(0, 0, 0, 0.5); /* Cambia el color del placeholder al enfocarse */
+  }
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+textarea{
+    margin-top: 4px;
+    width: 350px;
+    height: 90px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #b4b4b47c;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+textarea:focus{
+    background-color: rgba(255, 255, 255, 0.137); /* Fondo semi-transparente */
+    color: black; /* Color del texto al enfocarse */
+    border-color: lightblue; /* Cambia el color del borde */
+    outline: none; /* Quitar el borde por defecto del navegador */
+    border-radius: 3px;
+}
+
+textarea::placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+textarea:focus::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.Contactoform{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.enviar{
+    background-color: #333333;
+    color: white;
+    width: 352px;
+    height: 30px;
+    border-radius: 4px;
+    cursor: pointer;
+}

@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #1A2A47; 
+    background-color:#f2f0f4;
+}
+
+h1{
+    margin-top: 1%;
+    font-size: 80px;
+}
+
+.cosas{
+    font-size: 20px;
+    color: #333;
+    margin-top: 3%;
+}
+
+.cosas img{
+    position: relative;
+}
+
+#actividades{
+    margin-top: 5%;
+    font-size: 35px;
+}
+.huno{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+
+}
+
+ .garabato{
+    height: 200px;
+}
+p{
+    padding: 2px;
+}
+.pa{
+    font-size: 15px;
+}
+
+/* Para el resto del menú */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre las secciones */
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/* Contenedor del menú superior (Inicio + Barra de búsqueda) */
+.nav-top {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 5px;
+    
+}
+
+.escudo{
+    width: 60px;
+    height: auto;
+    display: flex;
+    justify-items: center;
+    content: none;
+}
+
+
+
+.Menu {
+    list-style-type: none;
+    display: flex;
+    justify-items: center;
+}
+
+
+
+.Menu li {
+    padding: auto;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.5s ease; /* Efecto suave de transición */
+    margin: 5px;
+}
+.Menu li.link:hover {
+   /* background-color: #fc5e1fef; *//* Color de resaltado al pasar el cursor */
+    background-color: #e1f0ff;
+}
+ 
+
+.Menu li a {
+    text-decoration: none;
+    color: #182e55;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+
+.buscar {
+    display: flex;
+    align-items: center;
+    width: 350px; /* Ajusta el ancho del input según necesites */
+    height: 35px;
+    padding-left: 6px;
+    border-radius: 25px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    border: 1px solid #d3d1d1;
+}
+
+.buscar input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    width: 300px;
+    height: 35px;
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+.buscar button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 99px;
+    background: none;
+    border: none;
+    filter: drop-shadow(10px, 10px, 10px, black);
+    cursor: pointer;
+    
+}
+
+main{
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 30px;
+
+}
+main:hover{
+    box-shadow: #666;
+}
+
+.galery{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    border: 1px solid white;
+    background-color: #f2f0f4;
+    border-radius: 10px;
+}
+
+.galeria {
+    width: 176px;
+    margin: 10px;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-position:center ;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 1.1s;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.imagen{
+    position: relative;
+    height:100% ;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all 1.1s;
+}
+
+.uno{
+background-image:url(img/85a07285-730c-4018-8995-5860585e0101.jpg);
+}
+
+.dos{
+background-image:url(img/20474773-c616-4cbd-9ff7-9f39995b33e7.jpg);
+}
+
+.tres{
+background-image:url(img/83614384-4cef-499a-b86e-749a01ed7951.jpg);
+}
+.cuatro{
+background-image:url(img/CafedelMarCartagena.jpg);
+}
+
+.cinco{
+background-image:url(img/Lasciudadesmásbonitasabrazadasporunamuralla.jpg);
+}
+
+.seis{
+    background-image:url(img/colombia.jpg) ;
+}
+
+.galery :hover .imagen{
+    transform: scale(1.2);
+}
+ 
+.pe {
+    position:absolute;
+    display: flex;
+    font-size: 13px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 5px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.pictures-container{
+    display: flex;
+    gap: 16px;
+    padding: 4px;
+    justify-items: center;
+    margin-top: 1%;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    cursor: pointer;
+    
+}
+
+.imge{
+    top: 50%;
+    left: 50%;
+    width:280px ;
+    height:300px ;
+    background-size: cover;
+    transition: all 1.1s;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.card:hover .imge {
+    transform: scale(1.05);
+}
+.container-0{
+    background-image:url(img/Actividad1.jpg);
+}
+.container-1{
+    background-image:url(img/Actividad2.jpg);
+
+}
+.container-2{
+    background-image:url(img/Actividad3.jpg);
+
+}
+.container-3{
+    background-image:url(img/Actividad4.jpg);
+
+}
+
+.card-contenido {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+
+}
+
+.card-contenido h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.duration {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.estrella{
+    color: #fbc02d;
+
+}
+
+.parentesis{
+    color: gray;
+}
+
+.contenedores-1{
+    background-image:url(img/playa.jpg);
+}
+
+.contenedores-2{
+    background-image:url(img/yate.avif) ;
+}
+
+.contenedores-3{
+    background-image:url(img/snorkel.webp);
+}
+
+.contenedores-4{
+    background-image: url(img/jetssky.jpg);
+}
+
+.contenedores-5{
+    background-image:url(img/arquitectura.jpg);
+}
+
+.experiencias{
+    display: flex;
+    gap: 16px;
+    padding: 4px;
+    justify-items: center;
+    margin-top: 1%;
+    padding: 5px;
+}
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+
+.imag{
+    top: 50%;
+    left: 50%;
+    width:220px;
+    height:250px;
+    background-size: cover;
+    background-color: white;
+    padding: 20px;
+    opacity: 0.9;
+}
+
+#exp{
+    margin-top: 5%;
+}
+
+.contexto{
+    position: relative;
+    display: flex;
+    font-size: 13px;
+    justify-items: center;
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 5px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.conte{
+    text-align: center;
+}
+
+footer {
+    background-color: white; /* Un color azul oscuro que puede resaltar */
+    color: black;
+    padding: 10px ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.footer-section {
+    margin: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin: 10px ;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #182e55; /* Un color amarillo para destacar los enlaces */
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #182e55; /* Un toque de color amarillo más claro al pasar el ratón */
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #182e55;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 11px;
+}
+
+.social-links li {
+    margin: 10px;
+}
+
+.social-links li a img {
+    width: 30px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%); /* Los iconos serán en blanco y negro */
+}
+
+.social-links li a img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%); /* Al pasar el ratón se colorearán */
+    
+}
+
+.copy {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 14px;
+    color: black; /* Un color gris claro */
+    border-top:1px solid #ccc;
+}
+
+.footer-boton {
+    width: 100%;
+    text-align: center;
+    background-color: white; /* Un tono más oscuro para crear contraste */
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
